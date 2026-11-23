@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d0507">
+  <title>The Invitation | Gaurav (Kanu) &amp; Bhawna</title>
+  <meta name="description" content="You are invited to celebrate the wedding of Gaurav (Kanu) and Bhawna on Friday, 11 December 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Great+Vibes&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="home">
+
+  <div class="mandala mandala--left" data-mandala data-speed="0.08" aria-hidden="true"></div>
+  <div class="mandala mandala--right" data-mandala data-speed="0.13" aria-hidden="true"></div>
+  <canvas id="petal-canvas" class="petal-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" data-transition aria-label="Home">
+      <span class="brand__mark" aria-hidden="true">✦</span>
+      <span class="brand__text" data-text="shared.brand">The Wedding</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" data-transition data-nav="home"><span data-text="nav.home">Home</span></a>
+      <a href="events.html" data-transition data-nav="events"><span data-text="nav.events">Events</span></a>
+      <a href="blessings.html" data-transition data-nav="blessings"><span data-text="nav.blessings">Blessings</span></a>
+    </nav>
+    <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false" aria-label="Turn background music on">
+      <span class="music-toggle__icon" aria-hidden="true">♫</span>
+      <span class="music-toggle__label" data-music-label data-text="music.offLabel">Music Off</span>
+    </button>
+    <audio id="bg-music" loop preload="none"></audio>
+  </header>
+
+  <main>
+    <section class="page-wrap hero">
+      <span class="hero__ornament" aria-hidden="true">✦ ❀ ✦</span>
+      <p class="kicker" data-text="home.together">Together with their families</p>
+      <h1 class="couple-names" data-couple-names>Gaurav (Kanu) &amp; Bhawna</h1>
+      <p class="hero__invite" data-text="home.invite">invite you to celebrate their wedding</p>
+      <div class="date-plate">
+        <span class="date-plate__line" aria-hidden="true"></span>
+        <p data-text="home.date">Friday, 11 December 2026</p>
+        <span class="date-plate__line" aria-hidden="true"></span>
+      </div>
+      <a class="gold-btn" href="events.html" data-transition data-text="home.viewEvents">View Events</a>
+      <div class="paisley-rule" aria-hidden="true"></div>
+    </section>
+
+    <section class="page-wrap countdown" id="countdown" aria-label="Wedding countdown">
+      <h2 class="section-title" data-text="home.countdownTitle">Countdown to the celebration</h2>
+      <div class="countdown__grid">
+        <div class="count-box">
+          <span class="count-box__value" data-count="days" aria-live="off">--</span>
+          <span class="count-box__label" data-text="home.units.days">Days</span>
+        </div>
+        <div class="count-box">
+          <span class="count-box__value" data-count="hours" aria-live="off">--</span>
+          <span class="count-box__label" data-text="home.units.hours">Hours</span>
+        </div>
+        <div class="count-box">
+          <span class="count-box__value" data-count="minutes" aria-live="off">--</span>
+          <span class="count-box__label" data-text="home.units.minutes">Minutes</span>
+        </div>
+        <div class="count-box">
+          <span class="count-box__value" data-count="seconds" aria-live="off">--</span>
+          <span class="count-box__label" data-text="home.units.seconds">Seconds</span>
+        </div>
+      </div>
+      <p class="countdown__message" id="countdown-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="page-nav">
+    <a class="nav-btn nav-btn--back" href="index.html" data-transition>← <span data-text="buttons.back">Back</span></a>
+    <span class="page-nav__ornament" aria-hidden="true">✦</span>
+    <a class="nav-btn nav-btn--next" href="events.html" data-transition><span data-text="buttons.next">Next</span> →</a>
+  </footer>
+
+  <div id="opening" class="opening" aria-hidden="true">
+    <div class="opening__half opening__half--left"></div>
+    <div class="opening__half opening__half--right"></div>
+    <div class="opening__center">
+      <div class="opening__ornament" aria-hidden="true">☀</div>
+      <p class="opening__mantra" data-text="home.mantra">Shree Ganeshaya Namah</p>
+      <div class="opening__line" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <div class="page-curtain" id="page-curtain" aria-hidden="true">
+    <div class="page-curtain__half page-curtain__half--left"></div>
+    <div class="page-curtain__half page-curtain__half--right"></div>
+    <div class="page-curtain__glow"></div>
+  </div>
+
+</body>
+</html>
